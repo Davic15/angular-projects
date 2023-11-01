@@ -1,0 +1,281 @@
+<app-banner-cut-out [title]="'Components'"></app-banner-cut-out>
+
+<!-- Overlay -->
+<app-card [title]="'Overlay'" [subTitle]="'Components'">
+    <div body>
+        <app-overlay [isShown]="isShownOverlay"></app-overlay>
+        <button (click)="isShownOverlay = true">Show Overlay</button>
+    </div>
+</app-card>
+
+<!-- Password -->
+<app-card [title]="'Password'" [subTitle]="'Components'">
+    <div body>
+        <app-password></app-password>
+    </div>
+</app-card>
+
+<!-- Not found -->
+<app-card [title]="'Not Found'" [subTitle]="'Components'">
+    <div body>
+        <a routerLink="404">Go to Unknown Page</a>
+    </div>
+</app-card>
+
+<!-- Pill filter -->
+<app-card [title]="'Pill Filters'" [subTitle]="'Components'">
+    <div body>
+        <app-pill-filters [pills]="['CA', 'FL', 'TN', 'OR', 'WA']"></app-pill-filters>
+    </div>
+</app-card>
+
+<!-- Pill -->
+<app-card [title]="'Pill'" [subTitle]="'Components'">
+    <div body>
+        <app-pill [type]="PillType.Error" [iconClasses]="faTag" [label]="'Error'"></app-pill>
+        <app-pill [type]="PillType.Info" [iconClasses]="faTag" [label]="'Info'"></app-pill>
+        <app-pill [type]="PillType.Success" [iconClasses]="faTag" [label]="'Success'"></app-pill>
+        <app-pill [type]="PillType.Warning" [iconClasses]="faTag" [label]="'Warning'"></app-pill>
+    </div>
+</app-card>
+
+<!-- Fieldset -->
+<app-card [title]="'Fieldset'" [subTitle]="'Components'">
+    <div body>
+        <app-fieldset [legend]="'Address'">
+            <app-email-form></app-email-form>
+        </app-fieldset>
+    </div>
+</app-card>
+
+<!-- Bottom Sheet -->
+<app-card [title]="'Botton Sheet'" [subTitle]="'Components'">
+    <div body>
+        <app-bottom-sheet #bottomSheet>
+            <h1 (click)="bottomSheet.hide()">Hello</h1>
+            <h1 (click)="bottomSheet.show()">World</h1>
+        </app-bottom-sheet>
+        <div class="footer" footer>
+            <button (click)="bottomSheet.show()">Show</button>
+        </div>
+    </div>
+</app-card>
+
+<!-- Social Media Bar -->
+<app-card [title]="'Social Media Bar'" [subTitle]="'Components'">
+    <div body>
+        <app-social-media-bar [socialMedia]="socialMedia"></app-social-media-bar>
+    </div>
+</app-card>
+
+<!-- Skeleton Component -->
+<app-card [title]="'Skeleton Loader'" [subTitle]="'Components'">
+    <div body>
+        <app-skeleton-loader *ngIf="!loaded"></app-skeleton-loader>
+        <p *ngIf="loaded">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+            mollit anim id est laborum.
+        </p>
+    </div>
+    <button footer (click)="loaded = !loaded">Toggle</button>
+</app-card>
+
+<!-- Footer -->
+<app-card [title]="'Footer'" [subTitle]="'Component'">
+    <app-footer body></app-footer>
+</app-card>
+
+<!-- Countdown Timer-->
+<app-card [title]="'Countdown Timer'" [subTitle]="'Components'">
+    <app-countdown-timer body [time]="'Aug 15, 2023 11:33:44'"></app-countdown-timer>
+</app-card>
+
+<!-- Simple Popup -->
+<app-card [title]="'Simple Popup'" [subTitle]="'Components'">
+    <div body>
+        <app-simple-popup [message]="'Simple Popup Component'">
+            <h1>Hello World</h1>
+        </app-simple-popup>
+    </div>
+</app-card>
+
+<!-- Snackbar -->
+<app-card [title]="'Snackbar'" [subTitle]="'Components'">
+    <div body>
+        <app-snackbar [message]="'Snackbar Example'"></app-snackbar>
+        <button (click)="snackbarShow()">Show Snackbar</button>
+    </div>
+</app-card>
+
+<!-- Banner Cut Out -->
+<app-card [title]="'Cut Out'" [subTitle]="'Components'">
+    <app-banner-cut-out [title]="'100 Angular Challenges'" body></app-banner-cut-out>
+</app-card>
+
+<!-- Button Toggle -->
+<app-card [title]="'Button Toggle'" [subTitle]="'Components'">
+    <app-button-toggle body [options]="buttonToggleOptions"></app-button-toggle>
+</app-card>
+
+<!-- Ribbon -->
+<app-card [title]="'Ribbon'" [subTitle]="'Components'">
+    <div body>
+        <app-ribbon [content]="'Beta Course'" [location]="ribbonStyle.location" [type]="ribbonStyle.type"></app-ribbon>
+        <button (click)="ribbonStyle.location = RibbonLocation.TopRight">Top-Right</button>
+        <button (click)="ribbonStyle.location = RibbonLocation.TopLeft">Top-Left</button>
+        <button (click)="ribbonStyle.location = RibbonLocation.BottomRight">Bottom-Right</button>
+        <button (click)="ribbonStyle.location = RibbonLocation.BottomLeft">Bottom-Left</button>
+        <button (click)="ribbonStyle.type = RibbonType.Info">Info</button>
+        <button (click)="ribbonStyle.type = RibbonType.Error">Error</button>
+        <button (click)="ribbonStyle.type = RibbonType.Success">Success</button>
+        <button (click)="ribbonStyle.type = RibbonType.Warning">Warning</button>
+    </div>
+</app-card>
+
+<!-- Email Form -->
+<app-card [title]="'Email Form'" [subTitle]="'Components'">
+    <app-email-form body></app-email-form>
+</app-card>
+
+<!-- Sort Table -->
+<app-card [title]="'Sort Table'" [subTitle]="'Components'">
+    <app-sort-table body></app-sort-table>
+</app-card>
+
+<!-- Tabs -->
+<app-card [title]="'Tabs'" [subTitle]="'Components'">
+    <app-tabs body [tabs]="tabs" (selectedTabIndex)="selectedTab = $event;">
+        <app-paging *ngIf="selectedTab === 0" [totalItems]="200"></app-paging>
+        <app-counter *ngIf="selectedTab === 1"></app-counter>
+    </app-tabs>
+</app-card>
+
+<!-- Pagin -->
+<app-card [title]="'Paging'" [subTitle]="'Components'">
+    <app-paging body [totalItems]="200"></app-paging>
+</app-card>
+
+<!-- Simple Table -->
+<app-card [title]="'Simple Table'" [subTitle]="'Components'">
+    <app-simple-table body></app-simple-table>
+</app-card>
+
+<!-- Counter -->
+<app-card [title]="'Counter'" [subTitle]="'Components'">
+    <app-counter body></app-counter>
+</app-card>
+
+<!-- Search List -->
+<app-card [title]="'Search List'" [subTitle]="'Components'">
+    <app-search-list body [items]="['United States', 'Mexico', 'United Arab Emirates']">
+    </app-search-list>
+</app-card>
+
+<!-- Debounce Search -->
+<app-card [title]="'Debounce Search'" [subTitle]="'Components'">
+    <app-debounce-search body (searchUpdate)="debounceExampleMethod($event)"></app-debounce-search>
+</app-card>
+
+<!-- Rich Text Viewer -->
+<app-card [title]="'Rich Text Viewer'" [subTitle]="'Components'">
+    <div body>
+        <div>
+            <h3>Good Example</h3>
+            <app-rich-text-viewer [htmlText]="'<p>Hello World</p>'">
+            </app-rich-text-viewer>
+        </div>
+        <div>
+            <h3>Empty Example</h3>
+            <app-rich-text-viewer [htmlText]="'...'">
+            </app-rich-text-viewer>
+        </div>
+        <div>
+            <h3>Bad HTML Example</h3>
+            <app-rich-text-viewer [htmlText]="'<p>Hello World'">
+            </app-rich-text-viewer>
+        </div>
+    </div>
+</app-card>
+<!-- Toggle -->
+<app-card [title]="'Toggle'" [subTitle]="'Components'">
+    <app-toggle [isOn]="toggleValue" body>
+    </app-toggle>
+</app-card>
+<!-- Quote -->
+<app-card [title]="'Quote'" [subTitle]="'Components'">
+    <app-quote 
+        body 
+        [quote]="'Get Good. Get Great. Get Better'"
+        [author]="'Franklin David Macias Avellan'"
+        [occupation]="'Software Engineer, Front-end web developer'"
+    >
+    </app-quote>
+</app-card>
+
+<!-- Modal -->
+<app-card [title]="'Modal'" [subTitle]="'Components'">
+    <div body>
+        <app-modal [title]="'Modal Example'" #modal>
+            <p>Some Content</p>
+        </app-modal>
+    </div>
+    <div footer>
+        <button (click)="modal.open()">Call Modal</button>
+    </div>
+</app-card>
+
+<!-- LinkedIn Post -->
+<app-card [title]="'LinkedIn Post'" [subTitle]="'Components'">
+    <app-linkedin-post body></app-linkedin-post>
+</app-card>
+
+<!-- Twitter Post -->
+<app-card [title]="'Twitter Post'" [subTitle]="'Components'">
+    <app-twitter-post body></app-twitter-post>
+</app-card>
+
+<!-- Credit Card -->
+<app-card [title]="'Credit Card Input'" [subTitle]="'Components'">
+    <div body>
+        <app-credit-card-input [creditCardNumber]="'6321432143214321'" [isReadonly]="false"></app-credit-card-input>
+        <br>
+        <app-credit-card-input [creditCardNumber]="'6321432143214321'" [isReadonly]="true"></app-credit-card-input>
+    </div>
+</app-card>
+
+<!-- Loader -->
+<app-card [title]="'Loader'" [subTitle]="'Components'">
+    <app-loader body [isLoading]="false" [loaderType]="loaderType"></app-loader>
+    <p body>Loader</p>
+</app-card>
+
+<!-- Top of Page -->
+<app-card [title]="'Top of Page'" [subTitle]="'Components'">
+    <p body>Scroll 400px down the page to render.</p>
+</app-card>
+
+<!-- Rating stars -->
+<app-card [title]="'Star Ratings'" [subTitle]="'Components'">
+    <app-star-ratings body [rating]="4.6"></app-star-ratings>
+</app-card>
+
+<!-- Progress Bar -->
+<app-card [title]="'Progress Bar'" [subTitle]="'Components'">
+    <app-progress-bar body [value]="progressValue"></app-progress-bar>
+    <button footer (click)="progressValue = 75;">Update</button>
+</app-card>
+
+<!-- Accordion -->
+<app-card [title]="'Accordion'" [subTitle]="'Components'">
+    <app-accordion body [items]="accordionItems"></app-accordion>
+</app-card>
+
+<!-- Card -->
+<app-card [title]="'Card'" [subTitle]="'Components'">
+    <p body>Body Content</p>
+    <p footer>Footer Content</p>
+</app-card>
+

@@ -1,0 +1,5 @@
+<div [ngClass]="['pill-container', type]" (click)="toggle()">
+    <fa-icon *ngIf="iconClasses" [icon]="faTag"></fa-icon>
+    <span>{{ label }}</span>
+    <fa-icon *ngIf="isActive && canBeSelected" [icon]="faTimesCircle"></fa-icon>
+</div>

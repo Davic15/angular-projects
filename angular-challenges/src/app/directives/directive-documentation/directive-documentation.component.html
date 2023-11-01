@@ -1,0 +1,58 @@
+<app-banner-cut-out [title]="'Directives'" [imageUrl]="'assets/back-2.jpg'"></app-banner-cut-out>
+
+<!-- Auto Focus -->
+<app-card [title]="'Auto Focus'" [subTitle]="'Directives'">
+    <div body>
+        <app-modal #modal>
+            <div *ngIf="!modal.isHidden">
+                <input type="text" appAutoFocus>
+            </div>
+        </app-modal>
+    </div>
+    <div footer class="footer">
+        <button (click)="modal.open()">Call Modal</button>
+    </div>
+</app-card>
+
+<!-- Copy -->
+<app-card [title]="'Copy'" [subTitle]="'Directives'">
+    <button 
+        body appCopy="Directive Copy Example"
+        style="border: 1px solid black; text-align: center; padding: 10px;"
+    >Copy</button>
+</app-card>
+
+<!-- Scale -->
+<app-card [title]="'Scale'" [subTitle]="'Directives'">
+    <div 
+        body appScale
+        style="width: 100px; height: 100px; background-color: #007acc; margin-left: auto; margin-right: auto;"
+    >
+    </div>
+</app-card>
+
+<!-- Ripple -->
+<app-card [title]="'Rippe'" [subTitle]="'Directives'">
+    <div body>
+        <button appRipple="ripple" style="border: 1px solid black; text-align:center; padding: 10px;">Ripple Button</button>
+    </div>
+</app-card>
+
+<!-- Debounce Click -->
+<app-card [title]="'Debounce Click'" [subTitle]="'Directives'">
+    <div body>
+        <button appDebounceClick (debounceClick)="log()">Log</button>
+    </div>
+</app-card>
+
+<!-- Lazy Load Image -->
+<app-card [title]="'Lazy Load Image'" [subTitle]="'Directives'">
+    <div body>
+        <img 
+            appLazyLoadImage 
+            width="500px" 
+            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" 
+            alt="lazy load image"
+        >
+    </div>
+</app-card>
