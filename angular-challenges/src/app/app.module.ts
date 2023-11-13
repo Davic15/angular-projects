@@ -29,7 +29,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     ],
     providers: [],
     exports: [
-        ToolbarComponent
+        ToolbarComponent,
+        NotFoundComponent
     ],
     bootstrap: [AppComponent]
 })
