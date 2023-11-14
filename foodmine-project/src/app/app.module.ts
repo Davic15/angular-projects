@@ -14,24 +14,27 @@ import { CartPageComponent } from './cart-page/cart-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    HomeComponent,
-    SearchComponent,
-    TagsComponent,
-    FoodPageComponent,
-    CartPageComponent,
-    NotFoundComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    StarRatingModule.forRoot(),
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        HomeComponent,
+        SearchComponent,
+        TagsComponent,
+        FoodPageComponent,
+        CartPageComponent,
+        NotFoundComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        StarRatingModule.forRoot(),
+        FormsModule
+    ],
+    providers: [],
+    exports: [
+        HeaderComponent
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }
