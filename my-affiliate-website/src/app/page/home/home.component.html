@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <header>
+    <h1>myaffiliatewebsites</h1>
+  </header>
+
+  <div class="col-sm-2 mt-4 mb-3">
+    <select class="form-select" aria-label="Default select example">
+      <option selected disabled>Select Category</option>
+      <option *ngFor="let category of categoryList">{{category | titlecase}}</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-3 col-12 mt-3 mb-3" *ngFor="let item of showAllData">
+
+
+
+      <div class="box">
+        <h2>{{item.name | titlecase}}</h2>
+        <p>{{item.category | titlecase}} | {{item.type | titlecase}}</p>
+        <a href="{{item.url}}">Visit Site</a>
+      </div>
+    </div>
+  </div>
+
+</div>

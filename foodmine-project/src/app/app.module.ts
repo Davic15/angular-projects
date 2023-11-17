@@ -32,7 +32,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ],
     providers: [],
     exports: [
-        HeaderComponent
+        HeaderComponent,
+        HomeComponent
     ],
     bootstrap: [AppComponent]
 })
