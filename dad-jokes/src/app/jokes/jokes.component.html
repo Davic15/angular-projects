@@ -1,0 +1,13 @@
+<div class="joke__container">
+  <div id="error-container" class="error__container">
+    <p>
+      Something happened and couldn't load the joke! <br />
+      Tell the devs: <br />
+      <small id="error-message"></small>
+    </p>
+  </div>
+  <p id="joke">{{currentJoke}}</p>
+  <button id="button" class="button" type="button" (click)="getNewJoke()" [disabled]="buttonDisable">
+    <span id="cta" class="button_cta">I'm ready</span>
+  </button>
+</div>

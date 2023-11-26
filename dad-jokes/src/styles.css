@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Montserrat:wght@200&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #31e4bb;
+  font-size: 14px;
+  height: 90vh;
+  color: #14213d;
+}
