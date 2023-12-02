@@ -1,0 +1,11 @@
+<div class="app">
+  <header class="app-header">
+    <p>Chuck Norris Jokes</p>
+  </header>
+  <div class="btn-wrapper">
+    <button class="btn" *ngFor="let category of categoryList" (click)="getJokeByCategoryHandler(category)">{{category}}</button>
+  </div>
+  <div class="joke-wrapper app-header">
+    <p>{{randomJoke?.value}}</p>
+  </div>
+</div>
