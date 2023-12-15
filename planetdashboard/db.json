@@ -1,0 +1,76 @@
+{
+  "planets": [
+    {
+      "id": 1,
+      "name": "Mercury",
+      "god": "Mercury (Roman) - god of merchants, travelers and messages",
+      "funFact": "Mercury has no moons and it's the smallest planet in the solar system",
+      "avgDistanceFromSun": "57.9 million km",
+      "isInnerPlanet": true,
+      "imgUrl": "assets/images/mercury.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Venus",
+      "god": "Venus (Roman) - goddess of love and beauty",
+      "funFact": "Venus rotates in the opposite direction to most planets",
+      "avgDistanceFromSun": "108.2 million km",
+      "isInnerPlanet": true,
+      "imgUrl": "assets/images/venus.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Earth",
+      "god": "Gaia (Greek) - goddess of earth or land and shows that she was the human version of the earth",
+      "funFact": "Earth has a powerful magnetic field",
+      "avgDistanceFromSun": "149.6 million km",
+      "isInnerPlanet": true,
+      "imgUrl": "assets/images/earth.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Mars",
+      "god": "Mars (Roman) - god of war and also an agricultural guardian",
+      "funFact": "Mars is home to the tallest mountain in the solar system",
+      "avgDistanceFromSun": "227.9 million km",
+      "isInnerPlanet": true,
+      "imgUrl": "assets/images/mars.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Jupiter",
+      "god": "Jupiter (Roman) - god of the sky and thunder, and king of the gods",
+      "funFact": "Jupiter has the shortest day of all the planets",
+      "avgDistanceFromSun": "778.6 million km",
+      "isInnerPlanet": false,
+      "imgUrl": "assets/images/jupiter.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Saturn",
+      "god": "Saturn (Roman) - god of the Capitol, time, wealth, agriculture, and liberation",
+      "funFact": "Saturn was known to the ancients, including the Babylonians and Far Eastern observers",
+      "avgDistanceFromSun": "1433.5 million km",
+      "isInnerPlanet": false,
+      "imgUrl": "assets/images/saturn.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Uranus",
+      "god": "Uranus (Greek) - god of the Sky and The Heavens",
+      "funFact": "Uranus turns on its axis once every 17 hours, 14 minutes",
+      "avgDistanceFromSun": "2872.5 million km",
+      "isInnerPlanet": false,
+      "imgUrl": "assets/images/uranus.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Neptune",
+      "god": "Neptune (Roman) - god of the Sea",
+      "funFact": "A year on Neptune lasts 165 Earth years",
+      "avgDistanceFromSun": "4495.1 million km",
+      "isInnerPlanet": false,
+      "imgUrl": "assets/images/neptune.jpg"
+    }
+  ]
+}
