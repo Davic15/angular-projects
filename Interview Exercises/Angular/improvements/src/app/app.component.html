@@ -1,0 +1,4 @@
+<button (click)="appendCard()">Append Card</button>
+<button (click)="prependCard()">Prepend Card</button>
+
+<app-card *ngFor="let card of cards" [number]="card"></app-card>

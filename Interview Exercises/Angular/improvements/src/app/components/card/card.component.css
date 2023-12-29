@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border: solid black 1px;
+  background-color: #eeeeee;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 1rem;
+  padding: 0.25rem;
+}
+
+/*# sourceMappingURL=card.component.css.map */

@@ -1,0 +1,6 @@
+<ng-container *ngFor="let value of [1, 2, 3, 4, 5, 'Hello']">
+  <div class="card">
+    <span class="card__title">Card "{{ value }}"</span>
+    <a [routerLink]="['detail', value]">Details</a>
+  </div>
+</ng-container>

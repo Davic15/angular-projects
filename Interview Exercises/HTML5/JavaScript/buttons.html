@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+        button {
+            display: block;
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+<button id="generate-button-button"></button>
+
+<script defer>
+    const btn =  document.getElementById('generate-button-button');
+    const wrapper = document.createElement('div');
+
+    let counter = 1;
+
+    createButtonHandler = () => {
+        let id = `btn-${counter}`
+        wrapper.innerHTML += `<button id=${id} onclick="displayAlert(id)">Alert ${counter}</button>`
+        document.body.appendChild(wrapper)
+        counter++;
+        displayMessage();
+    }
+
+    displayMessage = () => {
+        btn.innerText = `Generate Alert-"${counter}"-Button`;
+    }
+
+    displayAlert = (id) => {
+        alert("Hello " + id.toString().substring(4,5) + "!")
+    }
+
+    btn.addEventListener("click", createButtonHandler);
+    displayMessage();
+
+</script>
+</body>
+</html>

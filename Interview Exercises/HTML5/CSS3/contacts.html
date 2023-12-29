@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .entries h1 {
+            margin-top: 0;
+            margin-left: 0.5rem;
+        }
+
+        .entries {
+            width: 450px;
+            margin: 15px auto;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        .entry {
+            padding: 0.5rem;
+            display: flex;
+        }
+
+        .entry__image {
+            height: 80px;
+            margin-right: 1rem;
+            border-radius: 50%;
+        }
+
+        .entry__information {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .entry__information__name {
+            margin-bottom: 0.25rem;
+            font-weight: bolder;
+        }
+
+        .entry__information__phone a {
+            color: black;
+        }
+
+        .entry:nth-child(odd) {
+            background-color: #c2bcbc;
+        }
+
+        .entry:nth-last-child(1) {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="entries">
+        <h1 class="entries__header">Contacts</h1>
+        <div class="entry">
+            <img class="entry__image" src="https://picsum.photos/200" alt="Picture of Contact 1">
+            <div class="entry__information">
+                <span class="entry__information__name">Contact 1</span>
+                <span class="entry__information__phone"><a href="tel:+43 660 1234560">+43 660 1234560</a></span>
+            </div>
+        </div>
+        <div class="entry">
+            <img class="entry__image" src="https://picsum.photos/200" alt="Picture of Contact 2">
+            <div class="entry__information">
+                <span class="entry__information__name">Contact 2</span>
+                <span class="entry__information__phone"><a href="tel:+43 660 1234561">+43 660 1234561</a></span>
+            </div>
+        </div>
+        <div class="entry">
+            <img class="entry__image" src="https://picsum.photos/200" alt="Picture of Contact 3">
+            <div class="entry__information">
+                <span class="entry__information__name">Contact 3</span>
+                <span class="entry__information__phone"><a href="tel:+43 660 1234562">+43 660 1234562</a></span>
+            </div>
+        </div>
+        <div class="entry">
+            <img class="entry__image" src="https://picsum.photos/200" alt="Picture of Contact 4">
+            <div class="entry__information">
+                <span class="entry__information__name">Contact 4</span>
+                <span class="entry__information__phone"><a href="tel:+43 660 1234563">+43 660 1234563</a></span>
+            </div>
+        </div>
+        <div class="entry">
+            <img class="entry__image" src="https://picsum.photos/200" alt="Picture of Contact 5">
+            <div class="entry__information">
+                <span class="entry__information__name">Contact 5</span>
+                <span class="entry__information__phone"><a href="tel:+43 660 1234564">+43 660 1234564</a></span>
+            </div>
+        </div>
+        <div class="entry">
+            <img class="entry__image" src="https://picsum.photos/200" alt="Picture of Contact 6">
+            <div class="entry__information">
+                <span class="entry__information__name">Contact 6</span>
+                <span class="entry__information__phone"><a href="tel:+43 660 1234565">+43 660 1234565</a></span>
+            </div>
+        </div>
+        <div class="entry">
+            <img class="entry__image" src="https://picsum.photos/200" alt="Picture of Contact 7">
+            <div class="entry__information">
+                <span class="entry__information__name">Contact 7</span>
+                <span class="entry__information__phone"><a href="tel:+43 660 1234566">+43 660 1234566</a></span>
+            </div>
+        </div>
+        <div class="entry">
+            <img class="entry__image" src="https://picsum.photos/200" alt="Picture of Contact 8">
+            <div class="entry__information">
+                <span class="entry__information__name">Contact 8</span>
+                <span class="entry__information__phone"><a href="tel:+43 660 1234567">+43 660 1234567</a></span>
+            </div>
+        </div>
+        <div class="entry">
+            <img class="entry__image" src="https://picsum.photos/200" alt="Picture of Contact 9">
+            <div class="entry__information">
+                <span class="entry__information__name">Contact 9</span>
+                <span class="entry__information__phone"><a href="tel:+43 660 1234568">+43 660 1234568</a></span>
+            </div>
+        </div>
+        <div class="entry">
+            <img class="entry__image" src="https://picsum.photos/200" alt="Picture of Contact 10">
+            <div class="entry__information">
+                <span class="entry__information__name">Contact 10</span>
+                <span class="entry__information__phone"><a href="tel:+43 660 1234569">+43 660 1234569</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
