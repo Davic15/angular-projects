@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  z-index: 5;
+  z-index: 5
 }
 
 .hero-image img {
@@ -113,7 +113,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  background: var(--color-white);
+  background: var(--color-white)
 }
 
 .hero-content__customer {
@@ -124,7 +124,7 @@
 .hero-content__customer h4 {
   font-size: 62px;
   font-weight: 400;
-  font-family: var(--playfair-display);
+  font-family: var(--playfair-display)
 }
 
 .hero-content__customer p {
@@ -157,5 +157,51 @@
   line-height: 32px;
   font-family: var(--plus-jakarta-sans);
   color: var(--secondary-color);
-  opacity: 0.8;
+  opacity: 0.8
+}
+
+@media screen and (max-width: 1060px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-image img {
+    width: 100%;
+
+    transform: matrix(1, 0.05, 0, 1.25, 0, 0) !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hero-image h2 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero-image h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .hero-content-info {
+    padding: 32px;
+  }
+
+  .hero-content-info h1 {
+    font-size: 60px;
+  }
+
+  .hero-content-info p {
+    margin: 32px 0;
+  }
+
+  .hero-content__buttons {
+    margin: 41px 0;
+  }
+
+  .hero-content__testimonial {
+    padding: 32px;
+  }
 }

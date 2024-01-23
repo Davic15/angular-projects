@@ -3,11 +3,11 @@ import {Component, OnInit} from '@angular/core';
 import AOS from 'aos';
 
 @Component({
-  selector: 'app-hero',
-  templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.css']
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.css']
 })
-export class HeroComponent implements OnInit {
+export class FooterComponent implements OnInit {
   ngOnInit() {
     AOS.init({
       duration: 1000,
